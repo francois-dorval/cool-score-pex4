@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test --reporter spec",
-    "test-jenkins": "mocha test --reporter mocha-jenkins-reporter"
+    "test-jenkins": "JUNIT_REPORT_PATH=report.xml  mocha test --reporter mocha-jenkins-reporter"
   },
   "author": "",
   "license": "ISC",

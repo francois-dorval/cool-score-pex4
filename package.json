@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha test --reporter spec",
+    "test-jenkins": "mocha test --reporter mocha-xunit-reporter"
+
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +15,8 @@
     "express": "^4.17.1",
     "mocha": "^8.3.0",
     "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "mocha-xunit-reporter": "^2.3.0"
   }
 }

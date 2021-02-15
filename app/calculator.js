@@ -1,3 +1,8 @@
+/**
+ * calculates a score and a phrase
+ * @param name
+ * @returns {string}
+ */
 exports.score = function (name) {
 
 
@@ -20,7 +25,7 @@ exports.score = function (name) {
 };
 
 /**
- * convertit une chaine en entier entre 0 et 20
+ * converts a string to an integer between 0 and 20
  * @param str
  * @returns {number}
  */

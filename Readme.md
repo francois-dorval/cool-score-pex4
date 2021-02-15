@@ -10,7 +10,7 @@ Dans le répertoire du projet :
 
 ## Lancement
 
-`node app/server.js` 
+`npm start` 
 
 ## Utilisation
 
@@ -21,9 +21,12 @@ Changer le paramètre "name" pour découvrir le potentiel de coolitude de votre 
 ## Développement
  Les seuls fichiers intéressants sont ceux quis sont dans app et dans test.
  
- node_modules : ce sont des lib
- 
  Vous pouvez les éditer avec votre IDE ou éditeur de texte préféré.
+
+ package.json : les dépendances et scripts de votre projet
+ 
+ node_modules : ce sont des lib, pas intéressant à regarder
+ 
  
  ## Tests
  

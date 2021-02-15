@@ -11,12 +11,20 @@ let prefix = "<pre>" +
     "                                                      <br/>" +
     "                                                      <br/></pre>";
 
-app.get("/score", function (req, res) {
 
+/**
+ * app endpoint
+ */
+app.get("/score", function (req, res) {
     let scorePhrase = calculator.score(req.query.name);
     let result = prefix ;
     result +=  "<h1>" + req.query.name + " -> "+scorePhrase + "</h1>";
     res.send(result);
+
+});
+
+app.get("/", function (req, res) {
+    res.send("calculez votre score de coolitude ici : <a href='/score?name=toto'>lien<a/>");
 
 });
 

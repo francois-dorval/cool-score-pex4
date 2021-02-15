@@ -14,7 +14,8 @@ let prefix = "<pre>" +
 app.get("/score", function (req, res) {
 
     let scorePhrase = calculator.score(req.query.name);
-    let result = prefix + "<h1>" + scorePhrase + "</h1>";
+    let result = prefix ;
+    result +=  "<h1>" + req.query.name + " -> "+scorePhrase + "</h1>";
     res.send(result);
 
 });

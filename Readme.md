@@ -24,3 +24,9 @@ Changer le paramètre "name" pour découvrir le potentiel de coolitude de votre 
  node_modules : ce sont des lib
  
  Vous pouvez les éditer avec votre IDE ou éditeur de texte préféré.
+ 
+ ## Tests
+ 
+Pour lancer les tests
+
+`npm run test`

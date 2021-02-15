@@ -1,5 +1,10 @@
 exports.score = function (name) {
 
+
+    if (name === "François"){
+        return "25/20 -> LA CLASSE"
+    }
+
     let score = exports.stringToIntHash(name);
     if (score < 5) {
         return score + "/20 -> désolé :-\ ";
@@ -22,6 +27,8 @@ exports.score = function (name) {
 exports.stringToIntHash=function(str) {
     let result = 0;
     let upperbound = 20;
+
+
 
     for (let i = 0; i < str.length; i++) {
         result = result + str.charCodeAt(i);

@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test --reporter spec",
-    "start": "node app/server.js"
+    "start": "node app/server.js",
+    "single-run": "node app/singleRun.js"
+
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.3.0",
     "express": "^4.17.1",
+    "minimist": "^1.2.5",
     "mocha": "^8.3.0",
     "request": "^2.88.2"
   },

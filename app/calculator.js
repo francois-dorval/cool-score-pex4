@@ -12,7 +12,7 @@ exports.score = function (name) {
 
     let score = exports.stringToIntHash(name);
     if (score < 5) {
-        return score + "/20 -> désolé :-\ ";
+        return score + "/20 -> désolé :-\\ ";
     }
     if (score < 10) {
         return score + "/20 -> bof bof! ";

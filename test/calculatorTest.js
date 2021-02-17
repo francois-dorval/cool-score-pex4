@@ -17,7 +17,7 @@ let calculator = require("../app/calculator");
     describe("Full text result verification", function () {
         it("Sammy should return wahou or something", function () {
             let result = calculator.score("Sammy");
-            expect(result).to.contain("wahou");
+            expect(result).to.contain("waaaaaaahou");
         });
         it("François should return 25/20", function () {
             let result = calculator.score("François");

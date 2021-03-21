@@ -29,10 +29,8 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
     
-    - name: Build the latest Docker image
     - run: docker build . --tag "mon-image"
     
-    - name: Run the Docker image
     - run: docker run mon-image
 
 

@@ -2,6 +2,10 @@ let express = require("express");
 let app = express();
 let calculator = require("./calculator");
 
+
+let port = process.env.PORT || 3000;
+
+
 let prefix = "<pre>" +
     "  / ____|          | |  / ____|                     _ <br/>" +
     " | |     ___   ___ | | | (___   ___ ___  _ __ ___  (_)<br/>" +
@@ -28,5 +32,5 @@ app.get("/", function (req, res) {
 
 });
 
-console.log("serveur lancé ici -> http://127.0.0.1:3000/score?name=test")
-app.listen(3000);
+console.log("serveur lancé ici -> http://127.0.0.1:"+port+"/score?name=test")
+app.listen(port);

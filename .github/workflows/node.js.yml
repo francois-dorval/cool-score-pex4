@@ -30,7 +30,8 @@ jobs:
     - run: npm test
     
     - name: Build the latest Docker image
-      run: docker build .
+    - run: docker build . --tag "mon-image"
+    - run: docker run mon-image
 
 
 

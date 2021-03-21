@@ -6,8 +6,9 @@
   "scripts": {
     "test": "mocha test --reporter spec",
     "start": "node app/server.js",
-    "single-run": "node app/singleRun.js"
-
+    "single-run": "node app/singleRun.js",
+    "test-jenkins": "JUNIT_REPORT_PATH=report.xml  mocha test --reporter mocha-jenkins-reporter"
+ 
   },
   "author": "",
   "license": "ISC",

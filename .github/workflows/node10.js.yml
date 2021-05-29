@@ -32,4 +32,4 @@ jobs:
     
     - run: docker build https://github.com/Kriptonikk/cool-score-pex4.git#main
     
-    - run: docker run Dockerfile
+    - run: docker run https://github.com/Kriptonikk/cool-score-pex4.git#main

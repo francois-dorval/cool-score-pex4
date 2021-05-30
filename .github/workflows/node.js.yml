@@ -1,5 +1,0 @@
-      - name: Build the latest Docker image
-      - run: docker build . --tag "Dockfile"
-
-      - name: Run the Docker image
-      - run: docker run Dockerfile 

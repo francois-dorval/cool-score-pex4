@@ -29,5 +29,5 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
 
-    - run: docker build . --tag PEX4
-    - run: docker run PEX4
+    - run: docker build . --tag pex4
+    - run: docker run pex4
